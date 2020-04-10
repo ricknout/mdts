@@ -4,20 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/favorite"
-        android:icon="@drawable/ic_favorite_24dp"
-        android:title="@string/share"
-        app:showAsAction="ifRoom" />
-
-    <item
         android:id="@+id/search"
         android:icon="@drawable/ic_search_24dp"
         android:title="@string/search"
         app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/share"
-        android:title="@string/share"
-        app:showAsAction="never" />
 
 </menu>
