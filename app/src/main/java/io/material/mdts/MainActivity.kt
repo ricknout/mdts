@@ -22,15 +22,13 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         TooltipCompat.setTooltipText(fab, getString(R.string.add))
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.item1,
-                R.id.item2,
-                R.id.item3,
-                R.id.item4,
-                R.id.item5,
-                R.id.item6,
-                R.id.item7,
-                R.id.item8,
-                R.id.item9
+                R.id.home,
+                R.id.myLibrary,
+                R.id.topCharts,
+                R.id.newReleases,
+                R.id.radio,
+                R.id.podcasts,
+                R.id.settingsAndAccount
             ),
             drawer
         )

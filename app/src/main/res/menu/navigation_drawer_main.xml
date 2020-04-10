@@ -6,41 +6,33 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/item1"
+            android:id="@+id/home"
             android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_1" />
+            android:title="@string/home" />
         <item
-            android:id="@+id/item2"
+            android:id="@+id/myLibrary"
             android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_2" />
+            android:title="@string/my_library" />
         <item
-            android:id="@+id/item3"
+            android:id="@+id/topCharts"
             android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_3" />
+            android:title="@string/top_charts" />
         <item
-            android:id="@+id/item4"
+            android:id="@+id/newReleases"
             android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_4" />
+            android:title="@string/new_releases" />
         <item
-            android:id="@+id/item5"
+            android:id="@+id/radio"
             android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_5" />
+            android:title="@string/radio" />
         <item
-            android:id="@+id/item6"
+            android:id="@+id/podcasts"
             android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_6" />
+            android:title="@string/podcasts" />
         <item
-            android:id="@+id/item7"
+            android:id="@+id/settingsAndAccount"
             android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_7" />
-        <item
-            android:id="@+id/item8"
-            android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_8" />
-        <item
-            android:id="@+id/item9"
-            android:icon="@drawable/ic_favorite_24dp"
-            android:title="@string/item_9" />
+            android:title="@string/settings_and_account" />
     </group>
 
 </menu>
