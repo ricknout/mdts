@@ -15,8 +15,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="@string/title"
-            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface" />
+            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+            tools:title="@string/home" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
