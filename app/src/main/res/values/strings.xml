@@ -7,11 +7,12 @@
     <string name="subtitle">Subtitle</string>
     <string name="headline">Headline</string>
     <string name="body">Body</string>
-    <string name="starter_app">Starter app</string>
+    <string name="username">Username</string>
     <string name="add">Add</string>
     <string name="share">Share</string>
     <string name="favorite">Favorite</string>
     <string name="search">Search</string>
+    <string name="email_address">email address</string>
 
     <string name="item_1">Item 1</string>
     <string name="item_2">Item 2</string>
