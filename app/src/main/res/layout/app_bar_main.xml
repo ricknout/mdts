@@ -9,13 +9,14 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+            style="@style/Widget.App.Toolbar.PrimarySurface.NoBackground"
             tools:title="@string/home" />
 
     </com.google.android.material.appbar.AppBarLayout>
