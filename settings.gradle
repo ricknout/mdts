@@ -1,2 +1,2 @@
-rootProject.name='Material Starter Kit'
+rootProject.name='MDTS'
 include ':app'
