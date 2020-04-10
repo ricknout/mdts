@@ -10,10 +10,7 @@
     <string name="radio">Radio</string>
     <string name="podcasts">Podcasts</string>
     <string name="settings_and_account">Settings &amp; account</string>
-
-    <string name="subtitle">Subtitle</string>
-    <string name="headline">Headline</string>
-    <string name="body">Body</string>
+    
     <string name="username">Username</string>
     <string name="add">Add</string>
     <string name="search">Search</string>
