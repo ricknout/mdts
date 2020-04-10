@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MDTS</string>
+
+    <string name="title">Title</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="headline">Headline</string>
+    <string name="body">Body</string>
+    <string name="starter_app">Starter app</string>
+    <string name="add">Add</string>
+    <string name="share">Share</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_4">Item 4</string>
+    <string name="item_5">Item 5</string>
+    <string name="item_6">Item 6</string>
+    <string name="item_7">Item 7</string>
+    <string name="item_8">Item 8</string>
+    <string name="item_9">Item 9</string>
+
+</resources>

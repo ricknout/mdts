@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_1" />
+        <item
+            android:id="@+id/item2"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_2" />
+        <item
+            android:id="@+id/item3"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_3" />
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_4" />
+        <item
+            android:id="@+id/item5"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_5" />
+        <item
+            android:id="@+id/item6"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_6" />
+        <item
+            android:id="@+id/item7"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_7" />
+        <item
+            android:id="@+id/item8"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_8" />
+        <item
+            android:id="@+id/item9"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/item_9" />
+    </group>
+
+</menu>

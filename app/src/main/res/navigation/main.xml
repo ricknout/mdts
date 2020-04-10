@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainNavGraph"
+    app:startDestination="@id/item1"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@id/item1"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item2"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item3"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item4"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item5"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item6"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item7"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item8"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@id/item9"
+        android:name="io.material.mdts.ui.ItemFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_item" />
+
+</navigation>

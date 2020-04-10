@@ -1,0 +1,2 @@
+rootProject.name='Material Starter Kit'
+include ':app'
