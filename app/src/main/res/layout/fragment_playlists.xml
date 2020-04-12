@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO: Playlists screen layout -->
-<TextView
+<androidx.recyclerview.widget.RecyclerView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="@string/playlists"
-    android:gravity="center" />
+    android:orientation="vertical"
+    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+    app:spanCount="@integer/span_count_playlists" />
