@@ -19,34 +19,4 @@
         android:label="@string/my_library"
         tools:layout="@layout/fragment_my_library" />
 
-    <fragment
-        android:id="@id/topCharts"
-        android:name="io.material.mdts.ui.EmptyFragment"
-        android:label="@string/top_charts"
-        tools:layout="@layout/fragment_empty" />
-
-    <fragment
-        android:id="@id/newReleases"
-        android:name="io.material.mdts.ui.EmptyFragment"
-        android:label="@string/new_releases"
-        tools:layout="@layout/fragment_empty" />
-
-    <fragment
-        android:id="@id/radio"
-        android:name="io.material.mdts.ui.EmptyFragment"
-        android:label="@string/radio"
-        tools:layout="@layout/fragment_empty" />
-
-    <fragment
-        android:id="@id/podcasts"
-        android:name="io.material.mdts.ui.EmptyFragment"
-        android:label="@string/podcasts"
-        tools:layout="@layout/fragment_empty" />
-
-    <fragment
-        android:id="@id/settingsAndAccount"
-        android:name="io.material.mdts.ui.EmptyFragment"
-        android:label="@string/settings_and_account"
-        tools:layout="@layout/fragment_empty" />
-
 </navigation>
