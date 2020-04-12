@@ -36,4 +36,8 @@
         <item name="colorOnError">@color/white</item>
     </style>
 
+    <style name="ThemeOverlay.App.ControlHighlightOnPrimarySurface" parent="">
+        <item name="colorControlHighlight">?attr/colorOnPrimarySurface</item>
+    </style>
+
 </resources>

@@ -28,7 +28,8 @@
     <style name="Widget.App.CardView.NowPlaying" parent="Widget.MaterialComponents.CardView">
         <item name="cardElevation">@dimen/elevation_now_playing</item>
         <item name="cardBackgroundColor">?attr/colorPrimarySurface</item>
-        <item name="rippleColor">?attr/colorOnPrimarySurface</item>
+        <item name="rippleColor">@color/on_primary_surface_20</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.ControlHighlightOnPrimarySurface</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.Card.NowPlaying</item>
     </style>
 
