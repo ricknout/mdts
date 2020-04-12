@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="Widget.App.Toolbar.Surface.NoBackground" parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
     <style name="Widget.App.Toolbar.PrimarySurface.NoBackground" parent="Widget.MaterialComponents.Toolbar.PrimarySurface">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Widget.App.TabLayout.PrimarySurface.NoBackground" parent="Widget.MaterialComponents.TabLayout.PrimarySurface">
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
     <style name="Widget.App.ShapeableImageView" parent="Widget.MaterialComponents.ShapeableImageView">

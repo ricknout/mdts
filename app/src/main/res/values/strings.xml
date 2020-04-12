@@ -15,4 +15,8 @@
     <string name="username">Username</string>
     <string name="email_address">email address</string>
 
+    <string name="playlists">Playlists</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
+
 </resources>
