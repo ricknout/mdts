@@ -16,8 +16,18 @@
         <item name="cornerSizeTopLeft">0dp</item>
     </style>
 
-    <style name="ShapeAppearanceOverlay.App.Image" parent="">
+    <style name="ShapeAppearanceOverlay.App.Image.Profile" parent="">
         <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Image.AlbumArt" parent="">
+        <item name="cornerSize">@dimen/corner_size_album_art</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Card.NowPlaying" parent="">
+        <item name="cornerSize">@dimen/corner_size_now_playing</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
 </resources>

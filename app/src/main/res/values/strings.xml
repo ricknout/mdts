@@ -19,4 +19,8 @@
     <string name="albums">Albums</string>
     <string name="artists">Artists</string>
 
+    <string name="song_name">Song name</string>
+    <string name="artist_album_name">Artist name • Album name</string>
+    <string name="pause">Pause</string>
+
 </resources>

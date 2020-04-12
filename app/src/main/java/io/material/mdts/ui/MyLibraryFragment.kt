@@ -8,6 +8,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import io.material.mdts.R
 import io.material.mdts.openDrawer
 import kotlinx.android.synthetic.main.fragment_my_library.*
+import kotlinx.android.synthetic.main.layout_now_playing.*
 
 class MyLibraryFragment : Fragment(R.layout.fragment_my_library) {
 
@@ -23,6 +24,9 @@ class MyLibraryFragment : Fragment(R.layout.fragment_my_library) {
                 else -> null
             }
         }.attach()
+        card.setOnClickListener {
+            // TODO: Show now playing screen
+        }
     }
 
     inner class MyLibraryAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {

@@ -9,14 +9,14 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image"
-        android:layout_width="@dimen/size_image"
-        android:layout_height="@dimen/size_image"
+        android:layout_width="@dimen/size_profile_image"
+        android:layout_height="@dimen/size_profile_image"
         android:layout_marginTop="@dimen/spacing_xxxl"
         android:layout_marginStart="@dimen/spacing"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image"
-        style="@style/Widget.App.ShapeableImageView" />
+        style="@style/Widget.App.ShapeableImageView.Profile" />
 
     <TextView
         android:id="@+id/headerTitle"

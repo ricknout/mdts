@@ -12,6 +12,12 @@
     <dimen name="height_header_title">24dp</dimen>
     <dimen name="height_header_subtitle">20dp</dimen>
 
-    <dimen name="size_image">40dp</dimen>
+    <dimen name="size_profile_image">40dp</dimen>
+    <dimen name="size_album_art_image">48dp</dimen>
+
+    <dimen name="corner_size_album_art">2dp</dimen>
+    <dimen name="corner_size_now_playing">4dp</dimen>
+
+    <dimen name="elevation_now_playing">8dp</dimen>
 
 </resources>
