@@ -9,7 +9,9 @@ import kotlinx.android.synthetic.main.fragment_playlists.*
 
 class PlaylistsFragment : Fragment(R.layout.fragment_playlists) {
 
-    private val adapter = PlaylistsAdapter()
+    private val adapter = PlaylistsAdapter { playlist ->
+        // TODO: Show playlist screen
+    }
     private val items = listOf(
         Playlist(title = "Playlist title", metaInfo = "Meta info"),
         Playlist(title = "Playlist title", metaInfo = "Meta info"),

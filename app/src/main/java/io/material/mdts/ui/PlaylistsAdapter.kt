@@ -10,14 +10,16 @@ import io.material.mdts.R
 import io.material.mdts.model.Playlist
 import kotlinx.android.synthetic.main.list_item_playlists.view.*
 
-class PlaylistsAdapter : ListAdapter<Playlist, PlaylistsViewHolder>(DIFF_CALLBACK) {
+class PlaylistsAdapter(
+    private val onClick: (playlist: Playlist) -> Unit
+) : ListAdapter<Playlist, PlaylistsViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         PlaylistsViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item_playlists, parent, false))
 
     override fun onBindViewHolder(holder: PlaylistsViewHolder, position: Int) {
         val playlist = getItem(position)
-        holder.bind(playlist)
+        holder.bind(playlist, onClick)
     }
 
     companion object {
@@ -30,8 +32,9 @@ class PlaylistsAdapter : ListAdapter<Playlist, PlaylistsViewHolder>(DIFF_CALLBAC
 
 class PlaylistsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    fun bind(playlist: Playlist) {
+    fun bind(playlist: Playlist, onClick: (playlist: Playlist) -> Unit) {
         itemView.title.text = playlist.title
         itemView.metaInfo.text = playlist.metaInfo
+        itemView.setOnClickListener { onClick(playlist) }
     }
 }
