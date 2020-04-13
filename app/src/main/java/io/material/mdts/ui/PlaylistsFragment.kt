@@ -27,8 +27,9 @@ class PlaylistsFragment : Fragment(R.layout.fragment_playlists) {
         super.onViewCreated(view, savedInstanceState)
         recyclerView.adapter = adapter
         adapter.submitList(items)
+        val space = resources.getDimensionPixelSize(R.dimen.spacing_xs)
         val spaceItemDecoration = SpaceItemDecoration(
-            resources.getDimensionPixelSize(R.dimen.spacing_xs)
+            left = space, top = space
         )
         recyclerView.addItemDecoration(spaceItemDecoration)
     }

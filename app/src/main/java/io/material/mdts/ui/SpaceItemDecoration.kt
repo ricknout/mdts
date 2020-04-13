@@ -5,7 +5,12 @@ import android.view.View
 import androidx.annotation.Px
 import androidx.recyclerview.widget.RecyclerView
 
-class SpaceItemDecoration(@Px val space: Int) : RecyclerView.ItemDecoration() {
+class SpaceItemDecoration(
+    @Px val left: Int = 0,
+    @Px val top: Int = 0,
+    @Px val right: Int = 0,
+    @Px val bottom: Int = 0
+) : RecyclerView.ItemDecoration() {
 
     override fun getItemOffsets(
         outRect: Rect,
@@ -13,6 +18,6 @@ class SpaceItemDecoration(@Px val space: Int) : RecyclerView.ItemDecoration() {
         parent: RecyclerView,
         state: RecyclerView.State
     ) {
-        outRect.set(space, space, space, space)
+        outRect.set(left, top, right, bottom)
     }
 }

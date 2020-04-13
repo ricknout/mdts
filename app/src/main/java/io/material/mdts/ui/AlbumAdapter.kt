@@ -8,18 +8,26 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import io.material.mdts.R
 import io.material.mdts.model.Album
-import kotlinx.android.synthetic.main.list_item_album.view.*
+import kotlinx.android.synthetic.main.list_item_album_vertical.view.*
 
 class AlbumAdapter(
+    private val horizontal: Boolean = false,
     private val onClick: (album: Album) -> Unit
 ) : ListAdapter<Album, AlbumViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        AlbumViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item_album, parent, false))
+        AlbumViewHolder(LayoutInflater.from(parent.context).inflate(
+            if (horizontal) {
+                R.layout.list_item_album_horizontal
+            } else {
+                R.layout.list_item_album_vertical
+            },
+            parent, false
+        ), onClick)
 
     override fun onBindViewHolder(holder: AlbumViewHolder, position: Int) {
         val album = getItem(position)
-        holder.bind(album, onClick)
+        holder.bind(album)
     }
 
     companion object {
@@ -30,9 +38,12 @@ class AlbumAdapter(
     }
 }
 
-class AlbumViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class AlbumViewHolder(
+    itemView: View,
+    private val onClick: (album: Album) -> Unit
+) : RecyclerView.ViewHolder(itemView) {
 
-    fun bind(album: Album, onClick: (album: Album) -> Unit) {
+    fun bind(album: Album) {
         itemView.title.text = album.title
         itemView.metaInfo.text = album.metaInfo
         itemView.setOnClickListener { onClick(album) }

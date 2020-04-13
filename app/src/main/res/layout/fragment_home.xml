@@ -33,6 +33,6 @@
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:listitem="@layout/list_item_home" />
+        tools:listitem="@layout/list_item_section" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
