@@ -9,4 +9,4 @@
     android:orientation="vertical"
     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
     app:spanCount="@integer/span_count_playlists"
-    tools:listitem="@layout/list_item_playlists" />
+    tools:listitem="@layout/list_item_album" />
