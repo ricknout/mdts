@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import io.material.mdts.R
-import io.material.mdts.openDrawer
+import io.material.mdts.util.openDrawer
 import kotlinx.android.synthetic.main.fragment_my_library.*
 import kotlinx.android.synthetic.main.layout_now_playing.*
 
