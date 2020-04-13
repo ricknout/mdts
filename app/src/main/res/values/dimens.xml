@@ -13,8 +13,10 @@
     <dimen name="height_header_title">24dp</dimen>
     <dimen name="height_header_subtitle">20dp</dimen>
     <dimen name="height_section_albums">204dp</dimen>
+    <dimen name="height_space_now_playing">80dp</dimen>
 
     <dimen name="min_height_album_art_app_bar">0dp</dimen>
+    <dimen name="min_height_queue">64dp</dimen>
 
     <dimen name="size_profile_image">40dp</dimen>
     <dimen name="size_album_art_image">48dp</dimen>

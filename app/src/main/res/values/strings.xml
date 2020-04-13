@@ -23,7 +23,12 @@
 
     <string name="song_name">Song name</string>
     <string name="artist_album_name">Artist name • Album name</string>
+
+    <string name="rewind">Rewind</string>
     <string name="pause">Pause</string>
+    <string name="forward">Forward</string>
+    <string name="queue">Queue</string>
+    <string name="remove">Remove</string>
 
     <string name="album_art">Album art</string>
 

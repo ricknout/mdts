@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
-        style="@style/Widget.MaterialComponents.AppBarLayout.Surface"
+        style="@style/Widget.App.AppBarLayout.Surface"
         app:liftOnScroll="true">
 
         <io.material.mdts.ui.FixedCollapsingToolbarLayout
@@ -50,6 +50,17 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- TODO: Now playing scrolling content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/content_now_playing" />
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

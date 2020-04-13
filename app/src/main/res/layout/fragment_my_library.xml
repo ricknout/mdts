@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
-        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+        style="@style/Widget.App.AppBarLayout.PrimarySurface"
         app:liftOnScroll="true">
 
         <com.google.android.material.appbar.MaterialToolbar

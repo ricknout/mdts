@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="Widget.App.AppBarLayout.Surface" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.ControlHighlightOnSurface</item>
+    </style>
+
+    <style name="Widget.App.AppBarLayout.PrimarySurface" parent="Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.ControlHighlightOnPrimarySurface</item>
+    </style>
+
     <style name="Widget.App.Toolbar.Surface.NoBackground" parent="Widget.MaterialComponents.Toolbar.Surface">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:elevation">0dp</item>
