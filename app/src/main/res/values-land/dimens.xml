@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="min_height_album_art_app_bar">200dp</dimen>
+
+</resources>

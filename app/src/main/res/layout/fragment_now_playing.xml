@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.NowPlayingFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        style="@style/Widget.MaterialComponents.AppBarLayout.Surface"
+        app:liftOnScroll="true">
+
+        <io.material.mdts.ui.FixedCollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@android:color/transparent"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/min_height_album_art_app_bar"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="@bool/adjust_view_bounds_album_art_app_bar"
+                app:srcCompat="@drawable/image"
+                android:contentDescription="@string/album_art"
+                app:layout_collapseMode="parallax" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                style="@style/Widget.App.Toolbar.Surface.NoBackground"
+                app:navigationIcon="@drawable/ic_close_24dp"
+                app:title="@string/now_playing"
+                app:menu="@menu/app_bar_more"
+                app:layout_collapseMode="pin" />
+
+        </io.material.mdts.ui.FixedCollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- TODO: Now playing scrolling content -->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -17,6 +17,22 @@
         android:id="@id/myLibrary"
         android:name="io.material.mdts.ui.MyLibraryFragment"
         android:label="@string/my_library"
-        tools:layout="@layout/fragment_my_library" />
+        tools:layout="@layout/fragment_my_library">
+
+        <action
+            android:id="@+id/myLibraryToNowPlaying"
+            app:destination="@id/nowPlaying"
+            app:enterAnim="@anim/slide_up_bottom_200"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popExitAnim="@anim/slide_down_top_300" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nowPlaying"
+        android:name="io.material.mdts.ui.NowPlayingFragment"
+        android:label="@string/now_playing"
+        tools:layout="@layout/fragment_now_playing" />
 
 </navigation>

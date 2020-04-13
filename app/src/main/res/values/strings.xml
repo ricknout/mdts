@@ -10,8 +10,10 @@
     <string name="radio">Radio</string>
     <string name="podcasts">Podcasts</string>
     <string name="settings_and_account">Settings &amp; account</string>
+    <string name="now_playing">Now playing</string>
 
     <string name="search">Search</string>
+    <string name="more">More</string>
     <string name="username">Username</string>
     <string name="email_address">email address</string>
 
@@ -22,5 +24,7 @@
     <string name="song_name">Song name</string>
     <string name="artist_album_name">Artist name • Album name</string>
     <string name="pause">Pause</string>
+
+    <string name="album_art">Album art</string>
 
 </resources>

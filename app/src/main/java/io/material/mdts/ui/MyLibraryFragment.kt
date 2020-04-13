@@ -3,6 +3,7 @@ package io.material.mdts.ui
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import io.material.mdts.R
@@ -25,7 +26,7 @@ class MyLibraryFragment : Fragment(R.layout.fragment_my_library) {
             }
         }.attach()
         card.setOnClickListener {
-            // TODO: Show now playing screen
+            findNavController().navigate(R.id.myLibraryToNowPlaying)
         }
     }
 
