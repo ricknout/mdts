@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="spacing_xs">4dp</dimen>
     <dimen name="spacing_small">8dp</dimen>
     <dimen name="spacing_medium">12dp</dimen>
     <dimen name="spacing">16dp</dimen>
@@ -17,7 +18,8 @@
 
     <dimen name="padding_bottom_my_library">64dp</dimen>
 
-    <dimen name="corner_size_album_art">2dp</dimen>
+    <dimen name="corner_size_album_art_small">2dp</dimen>
+    <dimen name="corner_size_album_art_medium">4dp</dimen>
     <dimen name="corner_size_now_playing">4dp</dimen>
 
     <dimen name="elevation_now_playing">8dp</dimen>
