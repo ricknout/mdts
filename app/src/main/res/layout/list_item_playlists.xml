@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintDimensionRatio="1:1"
         style="@style/Widget.App.ShapeableImageView.AlbumArt.Medium"
-        app:srcCompat="?attr/colorOnBackground" />
+        app:srcCompat="@drawable/image" />
 
     <TextView
         android:id="@+id/title"

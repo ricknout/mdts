@@ -20,7 +20,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             style="@style/Widget.App.ShapeableImageView.AlbumArt.Small"
-            app:srcCompat="?attr/colorOnPrimarySurface" />
+            app:srcCompat="@drawable/image" />
 
         <TextView
             android:id="@+id/songName"
