@@ -1,12 +1,12 @@
 # Material Design Theming Sessions sample app
 
-| Home (light) | Drawer (light) | My library (light) | Now playing 1 (light) | Now playing 2 (light) |
-| ------ | ----- | ------ | ----- | ----- |
-| ![Home (light)](/art/screenshot_1_light.png) | ![Drawer (light)](/art/screenshot_2_light.png) | ![My library (light)](/art/screenshot_3_light.png) | ![Now playing 1 (light)](/art/screenshot_4_light.png) | ![Now playing 2 (light)](/art/screenshot_5_light.png) |
+| Home (light) | Drawer (light) | My library (light) | Now playing 1 (light) | Now playing 2 (light) | Playlist (light) |
+| ------ | ----- | ------ | ----- | ----- | ----- |
+| ![Home (light)](/art/screenshot_1_light.png) | ![Drawer (light)](/art/screenshot_2_light.png) | ![My library (light)](/art/screenshot_3_light.png) | ![Now playing 1 (light)](/art/screenshot_4_light.png) | ![Now playing 2 (light)](/art/screenshot_5_light.png) | ![Playlist (light)](/art/screenshot_6_light.png) |
 
-| Home (dark) | Drawer (dark) | My library (dark) | Now playing 1 (dark) | Now playing 2 (dark) |
-| ------ | ----- | ------ | ----- | ----- |
-| ![Home (dark)](/art/screenshot_1_dark.png) | ![Drawer (dark)](/art/screenshot_2_dark.png) | ![My library (dark)](/art/screenshot_3_dark.png) | ![Now playing 1 (dark)](/art/screenshot_4_dark.png) | ![Now playing 2 (dark)](/art/screenshot_5_dark.png) |
+| Home (dark) | Drawer (dark) | My library (dark) | Now playing 1 (dark) | Now playing 2 (dark) | Playlist (dark) |
+| ------ | ----- | ------ | ----- | ----- | ----- |
+| ![Home (dark)](/art/screenshot_1_dark.png) | ![Drawer (dark)](/art/screenshot_2_dark.png) | ![My library (dark)](/art/screenshot_3_dark.png) | ![Now playing 1 (dark)](/art/screenshot_4_dark.png) | ![Now playing 2 (dark)](/art/screenshot_5_dark.png) | ![Playlist (dark)](/art/screenshot_6_dark.png) |
 
 ## License
 
