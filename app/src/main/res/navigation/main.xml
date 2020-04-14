@@ -11,7 +11,17 @@
         android:id="@id/home"
         android:name="io.material.mdts.ui.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/homeToPlaylist"
+            app:destination="@id/playlist"
+            app:enterAnim="@anim/slide_up_bottom_200"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popExitAnim="@anim/slide_down_top_300" />
+
+    </fragment>
 
     <fragment
         android:id="@id/myLibrary"
@@ -27,6 +37,14 @@
             app:exitAnim="@anim/fragment_fade_exit"
             app:popExitAnim="@anim/slide_down_top_300" />
 
+        <action
+            android:id="@+id/myLibraryToPlaylist"
+            app:destination="@id/playlist"
+            app:enterAnim="@anim/slide_up_bottom_200"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popExitAnim="@anim/slide_down_top_300" />
+
     </fragment>
 
     <fragment
@@ -34,5 +52,11 @@
         android:name="io.material.mdts.ui.NowPlayingFragment"
         android:label="@string/now_playing"
         tools:layout="@layout/fragment_now_playing" />
+
+    <fragment
+        android:id="@+id/playlist"
+        android:name="io.material.mdts.ui.PlaylistFragment"
+        android:label="@string/playlist_name"
+        tools:layout="@layout/fragment_playlist" />
 
 </navigation>

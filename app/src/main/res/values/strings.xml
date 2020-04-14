@@ -11,6 +11,7 @@
     <string name="podcasts">Podcasts</string>
     <string name="settings_and_account">Settings &amp; account</string>
     <string name="now_playing">Now playing</string>
+    <string name="playlist_name">Playlist name</string>
 
     <string name="search">Search</string>
     <string name="more">More</string>

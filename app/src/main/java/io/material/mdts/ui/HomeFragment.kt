@@ -3,6 +3,7 @@ package io.material.mdts.ui
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import io.material.mdts.R
 import io.material.mdts.model.Album
@@ -13,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private val adapter = SectionAdapter { album ->
-        // TODO: Show album/playlist screen
+        findNavController().navigate(R.id.homeToPlaylist)
     }
     private val items = listOf(
         Section(

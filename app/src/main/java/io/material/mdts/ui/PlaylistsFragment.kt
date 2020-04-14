@@ -3,6 +3,7 @@ package io.material.mdts.ui
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import io.material.mdts.R
 import io.material.mdts.model.Album
 import kotlinx.android.synthetic.main.fragment_playlists.*
@@ -10,7 +11,7 @@ import kotlinx.android.synthetic.main.fragment_playlists.*
 class PlaylistsFragment : Fragment(R.layout.fragment_playlists) {
 
     private val adapter = AlbumAdapter { album ->
-        // TODO: Show playlist screen
+        findNavController().navigate(R.id.myLibraryToPlaylist)
     }
     private val items = listOf(
         Album(title = "Playlist title", metaInfo = "Meta info"),
