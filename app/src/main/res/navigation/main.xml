@@ -16,10 +16,9 @@
         <action
             android:id="@+id/homeToPlaylist"
             app:destination="@id/playlist"
-            app:enterAnim="@anim/slide_up_bottom_200"
             app:popEnterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit"
-            app:popExitAnim="@anim/slide_down_top_300" />
+            app:popExitAnim="@anim/fragment_fade_exit" />
 
     </fragment>
 
@@ -32,18 +31,16 @@
         <action
             android:id="@+id/myLibraryToNowPlaying"
             app:destination="@id/nowPlaying"
-            app:enterAnim="@anim/slide_up_bottom_200"
             app:popEnterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit"
-            app:popExitAnim="@anim/slide_down_top_300" />
+            app:popExitAnim="@anim/fragment_fade_exit" />
 
         <action
             android:id="@+id/myLibraryToPlaylist"
             app:destination="@id/playlist"
-            app:enterAnim="@anim/slide_up_bottom_200"
             app:popEnterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit"
-            app:popExitAnim="@anim/slide_down_top_300" />
+            app:popExitAnim="@anim/fragment_fade_exit" />
 
     </fragment>
 

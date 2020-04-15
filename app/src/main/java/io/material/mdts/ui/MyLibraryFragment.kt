@@ -3,10 +3,12 @@ package io.material.mdts.ui
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import io.material.mdts.R
+import io.material.mdts.util.TRANSITION_NAME_NOW_PLAYING
 import io.material.mdts.util.openDrawer
 import kotlinx.android.synthetic.main.fragment_my_library.*
 import kotlinx.android.synthetic.main.layout_now_playing.*
@@ -25,8 +27,10 @@ class MyLibraryFragment : Fragment(R.layout.fragment_my_library) {
                 else -> null
             }
         }.attach()
-        card.setOnClickListener {
-            findNavController().navigate(R.id.myLibraryToNowPlaying)
+        card.setOnClickListener { cardView ->
+            cardView.transitionName = TRANSITION_NAME_NOW_PLAYING
+            val extras = FragmentNavigatorExtras(cardView to TRANSITION_NAME_NOW_PLAYING)
+            findNavController().navigate(R.id.myLibraryToNowPlaying, null, null, extras)
         }
     }
 

@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.list_item_album_vertical.view.*
 
 class AlbumAdapter(
     private val horizontal: Boolean = false,
-    private val onClick: (album: Album) -> Unit
+    private val onClick: (itemView: View, album: Album) -> Unit
 ) : ListAdapter<Album, AlbumViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
@@ -40,12 +40,12 @@ class AlbumAdapter(
 
 class AlbumViewHolder(
     itemView: View,
-    private val onClick: (album: Album) -> Unit
+    private val onClick: (itemView: View, album: Album) -> Unit
 ) : RecyclerView.ViewHolder(itemView) {
 
     fun bind(album: Album) {
         itemView.title.text = album.title
         itemView.metaInfo.text = album.metaInfo
-        itemView.setOnClickListener { onClick(album) }
+        itemView.setOnClickListener { onClick(itemView, album) }
     }
 }

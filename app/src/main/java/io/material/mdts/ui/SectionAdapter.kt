@@ -12,7 +12,7 @@ import io.material.mdts.model.Section
 import kotlinx.android.synthetic.main.list_item_section.view.*
 
 class SectionAdapter(
-    private val onClick: (album: Album) -> Unit
+    private val onClick: (itemView: View, album: Album) -> Unit
 ) : ListAdapter<Section, SectionViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = SectionViewHolder(
@@ -35,10 +35,10 @@ class SectionAdapter(
 
 class SectionViewHolder(
     itemView: View,
-    private val onClick: (album: Album) -> Unit
+    private val onClick: (itemView: View, album: Album) -> Unit
 ) : RecyclerView.ViewHolder(itemView) {
 
-    private val adapter = AlbumAdapter(horizontal = true) { album -> onClick(album) }
+    private val adapter = AlbumAdapter(horizontal = true) { itemView, album -> onClick(itemView, album) }
 
     fun bind(section: Section) {
         itemView.title.text = section.title
