@@ -27,7 +27,7 @@ class NowPlayingFragment : Fragment(R.layout.fragment_now_playing) {
         super.onViewCreated(view, savedInstanceState)
         view.transitionName = TRANSITION_NAME_NOW_PLAYING
         toolbar.setNavigationOnClickListener {
-            findNavController().popBackStack()
+            findNavController().navigateUp()
         }
         appBar.addOnOffsetChangedListener(OnOffsetChangedListener { appBarLayout, verticalOffset ->
             image.alpha = 1.0f - abs(verticalOffset / appBarLayout.totalScrollRange.toFloat())
