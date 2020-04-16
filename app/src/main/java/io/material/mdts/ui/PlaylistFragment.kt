@@ -3,6 +3,7 @@ package io.material.mdts.ui
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import com.google.android.material.transition.MaterialContainerTransform
@@ -16,11 +17,11 @@ class PlaylistFragment : Fragment(R.layout.fragment_playlist) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val transformation: MaterialContainerTransform = MaterialContainerTransform().apply {
-            fadeMode = MaterialContainerTransform.FADE_MODE_CROSS
+        val transition = MaterialContainerTransform().apply {
             duration = TRANSITION_DURATION
+            interpolator = FastOutSlowInInterpolator()
         }
-        sharedElementEnterTransition = transformation
+        sharedElementEnterTransition = transition
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
