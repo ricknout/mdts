@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="?attr/colorSurface"
+    android:transitionName="@string/transition_name_now_playing"
     tools:context=".ui.NowPlayingFragment">
 
     <com.google.android.material.appbar.AppBarLayout

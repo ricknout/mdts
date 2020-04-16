@@ -8,8 +8,6 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import com.google.android.material.transition.MaterialContainerTransform
 import io.material.mdts.R
-import io.material.mdts.util.TRANSITION_DURATION
-import io.material.mdts.util.TRANSITION_NAME_NOW_PLAYING
 import kotlinx.android.synthetic.main.fragment_now_playing.*
 import kotlin.math.abs
 
@@ -18,15 +16,15 @@ class NowPlayingFragment : Fragment(R.layout.fragment_now_playing) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val transition = MaterialContainerTransform().apply {
-            duration = TRANSITION_DURATION
+            duration = resources.getInteger(R.integer.duration_transition).toLong()
             interpolator = FastOutSlowInInterpolator()
         }
         sharedElementEnterTransition = transition
+        sharedElementReturnTransition = transition
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.transitionName = TRANSITION_NAME_NOW_PLAYING
         toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }

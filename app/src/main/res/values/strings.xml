@@ -33,4 +33,7 @@
 
     <string name="album_art">Album art</string>
 
+    <string name="transition_name_album">album_%s</string>
+    <string name="transition_name_now_playing">now_playing</string>
+
 </resources>

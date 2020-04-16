@@ -2,13 +2,13 @@ package io.material.mdts.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.doOnPreDraw
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import io.material.mdts.R
-import io.material.mdts.util.TRANSITION_NAME_NOW_PLAYING
 import io.material.mdts.util.openDrawer
 import kotlinx.android.synthetic.main.fragment_my_library.*
 import kotlinx.android.synthetic.main.layout_now_playing.*
@@ -17,6 +17,10 @@ class MyLibraryFragment : Fragment(R.layout.fragment_my_library) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // Postpone enter transitions to allow shared element transitions to run
+        // See: https://github.com/googlesamples/android-architecture-components/issues/495
+        postponeEnterTransition()
+        view.doOnPreDraw { startPostponedEnterTransition() }
         toolbar.setNavigationOnClickListener { openDrawer() }
         viewPager.adapter = MyLibraryAdapter(this)
         TabLayoutMediator(tabs, viewPager) { tab, position ->
@@ -28,9 +32,9 @@ class MyLibraryFragment : Fragment(R.layout.fragment_my_library) {
             }
         }.attach()
         card.setOnClickListener { cardView ->
-            cardView.transitionName = TRANSITION_NAME_NOW_PLAYING
-            val extras = FragmentNavigatorExtras(cardView to TRANSITION_NAME_NOW_PLAYING)
-            findNavController().navigate(R.id.myLibraryToNowPlaying, null, null, extras)
+            val directions = MyLibraryFragmentDirections.myLibraryToNowPlaying()
+            val extras = FragmentNavigatorExtras(cardView to cardView.transitionName)
+            findNavController().navigate(directions, extras)
         }
     }
 

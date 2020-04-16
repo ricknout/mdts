@@ -54,6 +54,12 @@
         android:id="@+id/playlist"
         android:name="io.material.mdts.ui.PlaylistFragment"
         android:label="@string/playlist_name"
-        tools:layout="@layout/fragment_playlist" />
+        tools:layout="@layout/fragment_playlist">
+
+        <argument
+            android:name="id"
+            app:argType="string" />
+
+    </fragment>
 
 </navigation>

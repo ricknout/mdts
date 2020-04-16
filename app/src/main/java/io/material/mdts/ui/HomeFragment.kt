@@ -2,26 +2,30 @@ package io.material.mdts.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.doOnPreDraw
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import io.material.mdts.R
 import io.material.mdts.model.sections
-import io.material.mdts.util.TRANSITION_NAME_PLAYLIST
 import io.material.mdts.util.openDrawer
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
-    private val adapter = SectionAdapter { itemView, _ ->
-        itemView.transitionName = TRANSITION_NAME_PLAYLIST
-        val extras = FragmentNavigatorExtras(itemView to TRANSITION_NAME_PLAYLIST)
-        findNavController().navigate(R.id.homeToPlaylist, null, null, extras)
+    private val adapter = SectionAdapter { itemView, album ->
+        val directions = HomeFragmentDirections.homeToPlaylist(id = album.id)
+        val extras = FragmentNavigatorExtras(itemView to itemView.transitionName)
+        findNavController().navigate(directions, extras)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // Postpone enter transitions to allow shared element transitions to run
+        // See: https://github.com/googlesamples/android-architecture-components/issues/495
+        postponeEnterTransition()
+        view.doOnPreDraw { startPostponedEnterTransition() }
         toolbar.setNavigationOnClickListener { openDrawer() }
         recyclerView.adapter = adapter
         adapter.submitList(sections)

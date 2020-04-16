@@ -7,15 +7,14 @@ import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import io.material.mdts.R
 import io.material.mdts.model.playlists
-import io.material.mdts.util.TRANSITION_NAME_PLAYLIST
 import kotlinx.android.synthetic.main.fragment_playlists.*
 
 class PlaylistsFragment : Fragment(R.layout.fragment_playlists) {
 
-    private val adapter = AlbumAdapter { itemView, _ ->
-        itemView.transitionName = TRANSITION_NAME_PLAYLIST
-        val extras = FragmentNavigatorExtras(itemView to TRANSITION_NAME_PLAYLIST)
-        findNavController().navigate(R.id.myLibraryToPlaylist, null, null, extras)
+    private val adapter = AlbumAdapter { itemView, album ->
+        val directions = MyLibraryFragmentDirections.myLibraryToPlaylist(id = album.id)
+        val extras = FragmentNavigatorExtras(itemView to itemView.transitionName)
+        findNavController().navigate(directions, extras)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

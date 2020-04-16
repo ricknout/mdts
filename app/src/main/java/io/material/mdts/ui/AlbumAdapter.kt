@@ -47,5 +47,6 @@ class AlbumViewHolder(
         itemView.title.text = album.title
         itemView.metaInfo.text = album.metaInfo
         itemView.setOnClickListener { onClick(itemView, album) }
+        itemView.transitionName = itemView.context.getString(R.string.transition_name_album, album.id)
     }
 }
