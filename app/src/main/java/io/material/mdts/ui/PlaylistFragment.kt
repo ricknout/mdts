@@ -23,6 +23,7 @@ class PlaylistFragment : Fragment(R.layout.fragment_playlist) {
             interpolator = FastOutSlowInInterpolator()
         }
         sharedElementEnterTransition = transition
+        sharedElementReturnTransition = transition
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
