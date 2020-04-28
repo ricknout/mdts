@@ -13,7 +13,7 @@
 
     <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSize">0dp</item>
     </style>
 
     <style name="ShapeAppearanceOverlay.App.Image.Profile" parent="">
