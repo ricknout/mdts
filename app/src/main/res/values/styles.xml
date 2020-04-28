@@ -35,7 +35,6 @@
 
     <style name="Widget.App.ShapeableImageView.AlbumArt.Medium" parent="Widget.MaterialComponents.ShapeableImageView">
         <item name="shapeAppearance">?attr/shapeAppearanceMediumComponent</item>
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.Image.AlbumArt.Medium</item>
     </style>
 
     <style name="Widget.App.CardView.NowPlaying" parent="Widget.MaterialComponents.CardView">

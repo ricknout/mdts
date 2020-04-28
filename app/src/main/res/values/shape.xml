@@ -24,10 +24,6 @@
         <item name="cornerSize">@dimen/corner_size_album_art_small</item>
     </style>
 
-    <style name="ShapeAppearanceOverlay.App.Image.AlbumArt.Medium" parent="">
-        <item name="cornerSize">@dimen/corner_size_album_art_medium</item>
-    </style>
-
     <style name="ShapeAppearanceOverlay.App.Card.NowPlaying" parent="">
         <item name="cornerSize">@dimen/corner_size_now_playing</item>
         <item name="cornerSizeBottomLeft">0dp</item>
