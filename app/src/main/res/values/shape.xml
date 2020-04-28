@@ -3,12 +3,12 @@
 
     <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">4dp</item>
+        <item name="cornerSize">16dp</item>
     </style>
 
     <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">4dp</item>
+        <item name="cornerSize">16dp</item>
     </style>
 
     <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
@@ -22,12 +22,6 @@
 
     <style name="ShapeAppearanceOverlay.App.Image.AlbumArt.Small" parent="">
         <item name="cornerSize">@dimen/corner_size_album_art_small</item>
-    </style>
-
-    <style name="ShapeAppearanceOverlay.App.Card.NowPlaying" parent="">
-        <item name="cornerSize">@dimen/corner_size_now_playing</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
 </resources>

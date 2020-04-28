@@ -43,7 +43,6 @@
         <item name="rippleColor">@color/on_primary_surface_20</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.ControlHighlightOnPrimarySurface</item>
         <item name="shapeAppearance">?attr/shapeAppearanceLargeComponent</item>
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.Card.NowPlaying</item>
     </style>
 
 </resources>
