@@ -8,6 +8,11 @@
 | ------ | ----- | ------ | ----- | ----- | ----- |
 | ![Home (dark)](/art/screenshot_1_dark.png) | ![Drawer (dark)](/art/screenshot_2_dark.png) | ![My library (dark)](/art/screenshot_3_dark.png) | ![Now playing 1 (dark)](/art/screenshot_4_dark.png) | ![Now playing 2 (dark)](/art/screenshot_5_dark.png) | ![Playlist (dark)](/art/screenshot_6_dark.png) |
 
+## Branches
+
+* [master](https://github.com/ricknout/mdts): Baseline theme
+* [example](https://github.com/ricknout/mdts/tree/example): Example theme
+
 ## License
 
 ```
