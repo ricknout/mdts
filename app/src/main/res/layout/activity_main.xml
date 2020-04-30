@@ -25,6 +25,7 @@
         android:fitsSystemWindows="true"
         android:layout_gravity="start"
         app:menu="@menu/navigation_drawer_main"
-        app:headerLayout="@layout/header_main"/>
+        app:headerLayout="@layout/header_main"
+        app:insetForeground="@android:color/transparent" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
