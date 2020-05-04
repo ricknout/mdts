@@ -18,8 +18,7 @@
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
     <style name="Theme.App" parent="Theme.App.Base">
@@ -35,6 +34,7 @@
         <item name="colorOnBackground">@color/black</item>
         <item name="colorError">@color/red_900</item>
         <item name="colorOnError">@color/white</item>
+        <item name="android:statusBarColor">@color/material_on_surface_disabled</item>
     </style>
 
     <style name="ThemeOverlay.App.ControlHighlightOnPrimary" parent="">

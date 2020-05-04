@@ -2,7 +2,9 @@ package io.material.mdts.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.ViewCompat
 import androidx.core.view.doOnPreDraw
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
@@ -35,6 +37,20 @@ class MyLibraryFragment : Fragment(R.layout.fragment_my_library) {
             val directions = MyLibraryFragmentDirections.myLibraryToNowPlaying()
             val extras = FragmentNavigatorExtras(cardView to cardView.transitionName)
             findNavController().navigate(directions, extras)
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(appBar) { v, insets ->
+            v.updatePadding(top = insets.systemWindowInsets.top)
+            insets
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(constraintLayout) { v, insets ->
+            v.updatePadding(bottom = insets.systemWindowInsets.bottom)
+            insets
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(viewPager) { v, insets ->
+            v.updatePadding(bottom = insets.systemWindowInsets.bottom +
+                    resources.getDimensionPixelSize(R.dimen.padding_bottom_my_library)
+            )
+            insets
         }
     }
 

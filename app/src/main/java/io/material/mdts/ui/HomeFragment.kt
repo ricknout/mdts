@@ -2,7 +2,9 @@ package io.material.mdts.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.ViewCompat
 import androidx.core.view.doOnPreDraw
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
@@ -31,5 +33,13 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         adapter.submitList(sections)
         val dividerItemDecoration = DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
         recyclerView.addItemDecoration(dividerItemDecoration)
+        ViewCompat.setOnApplyWindowInsetsListener(appBar) { v, insets ->
+            v.updatePadding(top = insets.systemWindowInsets.top)
+            insets
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(recyclerView) { v, insets ->
+            v.updatePadding(bottom = insets.systemWindowInsets.bottom)
+            insets
+        }
     }
 }

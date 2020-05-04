@@ -23,6 +23,9 @@
 
     <dimen name="padding_bottom_my_library">64dp</dimen>
 
+    <dimen name="padding_bottom_playlist">56dp</dimen>
+    <dimen name="padding_bottom_now_playing">56dp</dimen>
+
     <dimen name="corner_size_album_art_small">2dp</dimen>
     <dimen name="corner_size_now_playing">4dp</dimen>
 

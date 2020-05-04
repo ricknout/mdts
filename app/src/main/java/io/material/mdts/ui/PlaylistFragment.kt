@@ -2,6 +2,11 @@ package io.material.mdts.ui
 
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
+import androidx.core.view.ViewCompat
+import androidx.core.view.updateLayoutParams
+import androidx.core.view.updateMargins
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.navigation.fragment.findNavController
@@ -35,5 +40,15 @@ class PlaylistFragment : Fragment(R.layout.fragment_playlist) {
         appBar.addOnOffsetChangedListener(OnOffsetChangedListener { appBarLayout, verticalOffset ->
             image.alpha = 1.0f - abs(verticalOffset / appBarLayout.totalScrollRange.toFloat())
         })
+        ViewCompat.setOnApplyWindowInsetsListener(appBar) { _, insets ->
+            toolbar.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                updateMargins(top = insets.systemWindowInsets.top)
+            }
+            nestedScrollView.updatePadding(
+                bottom = insets.systemWindowInsets.top + insets.systemWindowInsets.bottom +
+                        resources.getDimensionPixelSize(R.dimen.padding_bottom_playlist)
+            )
+            insets
+        }
     }
 }
