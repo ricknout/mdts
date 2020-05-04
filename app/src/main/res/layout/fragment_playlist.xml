@@ -5,22 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="?attr/colorSurface"
-    tools:context=".ui.NowPlayingFragment">
+    tools:context=".ui.PlaylistFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
         style="@style/Widget.App.AppBarLayout.Surface"
         app:liftOnScroll="true">
 
-        <io.material.mdts.ui.FixedCollapsingToolbarLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:statusBarScrim="@android:color/transparent"
             app:titleEnabled="false">
@@ -30,7 +27,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/min_height_album_art_app_bar"
-                android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 android:adjustViewBounds="@bool/adjust_view_bounds_album_art_app_bar"
                 app:srcCompat="@drawable/image"
@@ -47,14 +43,14 @@
                 app:menu="@menu/app_bar_more"
                 app:layout_collapseMode="pin" />
 
-        </io.material.mdts.ui.FixedCollapsingToolbarLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="?attr/actionBarSize"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <include
