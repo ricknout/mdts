@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.transition.ArcMotion
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import com.google.android.material.transition.MaterialContainerTransform
 import io.material.mdts.R
@@ -26,6 +27,7 @@ class PlaylistFragment : Fragment(R.layout.fragment_playlist) {
         val transition = MaterialContainerTransform().apply {
             duration = resources.getInteger(R.integer.duration_transition).toLong()
             interpolator = FastOutSlowInInterpolator()
+            setPathMotion(ArcMotion())
         }
         sharedElementEnterTransition = transition
         sharedElementReturnTransition = transition
